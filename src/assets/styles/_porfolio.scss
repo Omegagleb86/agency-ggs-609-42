@@ -1,0 +1,172 @@
+.portfolio {
+    margin-top: 41px;
+
+    .container {
+        img:nth-child(1) {
+            position: relative;
+            top: 435px;
+            left: 377px;
+            z-index: -1;
+
+            @media (max-width:$breakpoints-xl) {
+                display: none;
+            }
+        }
+
+        img:nth-child(2) {
+            position: relative;
+            top: 231px;
+            left: 1015px;
+            z-index: -1;
+
+            @media (max-width:$breakpoints-xl) {
+                display: none;
+            }
+        }
+
+        .portfolio__group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            a {
+                letter-spacing: 0.1px;
+            }
+
+            h2 {
+                margin-bottom: 0;
+
+                @media (max-width:$breakpoints-mobile) {
+                    margin: 13px 0 39px 0;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 30px;
+                line-height: 1.7;
+                letter-spacing: 0.4px;
+                max-inline-size: 652px;
+
+                // @media (max-width:$breakpoints-sm) {
+                // }
+
+                @media (max-width:$breakpoints-mobile) {
+                    line-height: 1.5;
+                    margin-top: -4px;
+                    letter-spacing: 0.6px;
+                }
+            }
+
+            .portfolio__group__cards {
+                display: flex;
+                align-items: center;
+                gap: 69px;
+                margin-top: 49px;
+                margin-bottom: 24px;
+
+                // @media (min-width:1441px) {
+                //     margin-top: 82px;
+                // }
+
+                .portfolio__group__item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: start;
+                    border-radius: 30px;
+
+                    p {
+                        color: #FFF;
+                        font-size: 24px;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        margin: 0;
+                    }
+                }
+
+                .portfolio__group__item:nth-child(1) {
+                    background-image: url("../img/app.png");
+                    padding: 286px 134px 24px 24px;
+                }
+
+                .portfolio__group__item:nth-child(2) {
+                    background-image: url("../img/cloud.png");
+                    padding: 324px 252px 32px 30px;
+
+                    // p {
+                    //     padding: 0 0 13px 0;
+                    // }
+                }
+
+                .portfolio__group__item:nth-child(3) {
+                    background-image: url("../img/furniture.png");
+                    padding: 293px 82px 16px 28px;
+                }
+
+                @media (max-width:$breakpoints-xl) {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                @media (max-width:$breakpoints-sm) {
+                    gap: 54px;
+                }
+
+                @media (max-width:$breakpoints-mobile) {
+                    display: none;
+                }
+            }
+
+            .portfolio__group__cards-mobile{
+                display: none;
+
+
+                @media (max-width:$breakpoints-mobile) {
+                    display: flex;
+
+                    .portfolio__group__item:nth-child(1) {
+                        background-image: url("../img/app-mobile.png");
+                        padding: 252px 31px 24px 24px !important;
+                        max-inline-size: 245px;
+                    }
+    
+                    .portfolio__group__item:nth-child(2) {
+                        background-image: url("../img/cloud-mobile.png");
+                        padding: 324px 252px 32px 30px !important;
+                        max-inline-size: 119px;
+                    }
+    
+                    .portfolio__group__item:nth-child(3) {
+                        background-image: url("../img/furniture-mobile.png");
+                        padding: 293px 82px 16px 28px !important;
+                        max-inline-size: 192px;
+                    }
+                }
+            }
+
+            .button-primary {
+                letter-spacing: 0.4px;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    @media (max-width:$breakpoints-xl) {
+        margin-top: 150px;
+    }
+
+    @media (max-width:$breakpoints-lg) {
+        margin-top: 100px;
+    }
+
+    @media (max-width:$breakpoints-sm) {
+        margin-top: 100px;
+    }
+
+    @media (max-width:$breakpoints-mobile) {
+        margin-left: 13px;
+    }
+}

@@ -1,0 +1,229 @@
+.quality {
+
+    .quality__content {
+        position: relative;
+    }
+
+    .quality__img {
+        margin: 57px 0 56px 250px;
+        border-radius: 50px;
+
+        @media (max-width:$breakpoints-xl) {
+            margin-left: 110px;
+        }
+
+        @media (max-width:$breakpoints-lg) {
+            margin-left: 14px;
+        }
+
+        @media (max-width:$breakpoints-sm) {
+            transform: scale(0.5);
+            margin-left: -156px;
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+            margin-left: -171px;
+            margin-top: -118px;
+            transform: scale(0.446);
+            border-radius: 0;
+        }
+    }
+
+    /* Первая карточка */
+    img+.quality__card {
+        position: absolute;
+        z-index: 1;
+        top: 80px;
+        left: 142px;
+        padding: 15px 32px 16px 20px;
+        border: 1px solid #FFF;
+        background-color: #FFF;
+        border-radius: 16px;
+        font-weight: 700;
+        box-shadow: $box-shadow__quality-card;
+
+        .card-top {
+            p {
+                margin: 3px 0 0;
+                color: #1D1D1D;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.14px;
+                opacity: 0.5;
+                flex-wrap: nowrap;
+
+                @media (max-width:$breakpoints-mobile) {
+                    font-size: 6px;
+                }
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                gap: 0;
+
+                img {
+                    transform: scale(0.66);
+                }
+            }
+        }
+
+        p {
+            max-inline-size: 123px;
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.1px;
+            margin: 7px 0 0;
+
+            span {
+                font-weight: 700;
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                font-size: 12px;
+                text-align: left;
+                margin-left: 7px;
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width:$breakpoints-xl) {
+            top: 60px;
+            left: 72px;
+        }
+
+        @media (max-width:$breakpoints-lg) {
+            top: 54px;
+            left: 2px;
+        }
+
+        @media (max-width:$breakpoints-md) {
+            top: 58px;
+            left: 21px;
+        }
+
+        @media (max-width:$breakpoints-sm) {
+            top: 66px;
+            left: 28px;
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+            top: 6px;
+            left: 25px;
+            border-radius: 6px;
+            padding: 3px 17px 8px 8px;
+        }
+    }
+
+    /* Вторая карточка */
+    .quality__card+.quality__card {
+        position: absolute;
+        z-index: 1;
+        top: 399px;
+        left: 930px;
+        padding: 26px 22px 24px 20px;
+        border: 1px solid #FFF;
+        background-color: #FFF;
+        border-radius: 16px;
+        font-weight: 700;
+        box-shadow: $box-shadow__quality-card;
+
+        .card-top {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            max-inline-size: 94px;
+
+            img {
+                @media (max-width:$breakpoints-mobile) {
+                    transform: scale(0.481);
+                }
+            }
+
+            p {
+                color: #1D1D1D;
+                font-family: "Quicksand", sans-serif;
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 0.14px;
+
+
+                span {
+                    font-size: 6px;
+                    font-weight: 600;
+                    opacity: 0.5;
+
+                    @media (max-width:$breakpoints-mobile) {
+                        font-size: 3px;
+                    }
+                }
+
+                @media (max-width:$breakpoints-mobile) {
+                    font-size: 5px;
+                    margin-left: -4px;
+                }
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                gap: 2px;
+                text-align: left;
+                max-inline-size: 61px;
+                margin-left: -8px;
+            }
+        }
+
+        .card-top+p {
+
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-size: 10px;
+            letter-spacing: 0.1px;
+            line-height: 14px;
+            margin: 12px 0 0;
+            max-inline-size: 122px;
+
+            @media (max-width:$breakpoints-lg) {
+                text-align: left;
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                font-size: 5px;
+                text-align: left;
+                margin-top: 0;
+                line-height: 1.45;
+                margin-top: -3px;
+                max-inline-size: 62px;
+            }
+
+            @media (max-width:$breakpoints-mobile) {}
+        }
+
+        @media (max-width:$breakpoints-xl) {
+            top: 409px;
+            left: 730px;
+        }
+
+        @media (max-width:$breakpoints-lg) {
+            top: 455px;
+            left: 556px;
+        }
+
+        @media (max-width:$breakpoints-md) {
+            top: 455px;
+            left: 572px;
+        }
+
+        @media (max-width:$breakpoints-sm) {
+            top: -4px;
+            left: 233px;
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+            top: 186px;
+            left: 295px;
+            border-radius: 6px;
+            padding: 4px 8px 9px 9px;
+        }
+    }
+}

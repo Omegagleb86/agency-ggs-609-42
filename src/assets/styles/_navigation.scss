@@ -1,0 +1,49 @@
+.desktop-navigation {
+    display: flex;
+    align-items: center;
+    height: 190px;
+
+    @media (max-width:$breakpoints-lg) {
+        display: none;
+    }
+
+
+    .desktop-navigation__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 267px;
+
+        @media (max-width:$breakpoints-xl) {
+            gap: 120px;
+        }
+
+        @media (max-width:$breakpoints-lg) {
+            gap: 40px;
+        }
+    }
+
+    .navigation__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        padding-top: 4px;
+        padding-left: 0;
+
+        li {
+            a {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #1D1D1D;
+            }
+        }
+    }
+
+    .navigation__list-element_active {
+        font-weight: 700;
+    }
+
+    // .button-primary {
+    // }
+}

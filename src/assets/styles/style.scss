@@ -1,0 +1,24 @@
+/* Подключение переменных препроцессора */
+@import "variables.scss";
+/* Подключение главного стайла отвечающего за общие стили */
+@import "_base.scss";
+
+@import "_mobile-navigation.scss";
+/* Подключение блока отвечающего за header и навигацию на сайте */
+@import "_navigation.scss";
+/* Подключение блока призывающего начать создание проекта с другими людьми */
+@import "_start.scss";
+/* Подключение блока quality */
+@import "_quality.scss";
+/* Подключение блока teammate */
+@import "_teammate.scss";
+/* Подключение блока с скрвисами */
+@import "_services.scss";
+/* Подключение блока с предсьавленнами работами компании */
+@import "_porfolio.scss";
+/* Полкдючение блока testimoial */
+@import "_testimonial.scss";
+/* Подключение блока отзывающего пользователя к колоборации с компанией */
+@import "_collaboration.scss";
+/* Подключение блока footer */
+@import "_footer.scss";

@@ -1,0 +1,65 @@
+.start {
+    .start__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            max-inline-size: 762px;
+
+            @media (max-width:$breakpoints-md) {
+                max-inline-size: 458px;
+            }
+
+            @media (max-width:$breakpoints-sm) {
+                max-inline-size: 267px;
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                max-inline-size: 333px;
+                letter-spacing: 0.5px;
+
+            }
+        }
+
+        p {
+            margin: 0;
+            font-family: "Nunito", sans-serif;
+            letter-spacing: 0.4px;
+            line-height: 150%;
+            text-align: center;
+            padding-top: 24px;
+
+            @media (max-width:$breakpoints-lg) {}
+
+            @media (max-width:$breakpoints-sm) {
+                max-inline-size: 271px;
+            }
+
+            @media (max-width:$breakpoints-mobile) {
+                margin-top: -3px;
+                margin-left: 10px;
+                letter-spacing: 0.3px;
+                line-height: 1.5;
+                max-inline-size: 348px;
+            }
+        }
+
+        .button-blue {
+            margin: 32px 0 40px 10px;
+
+            @media (max-width:$breakpoints-mobile) {
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    @media (max-width:$breakpoints-mobile) {
+        margin-top: 58px;
+        margin-left: 3px;
+    }
+}

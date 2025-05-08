@@ -1,0 +1,82 @@
+.collaboration {
+    margin-top: 207px;
+
+    .collaboration__content {
+        display: flex;
+
+        .collaboration__description {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                margin-top: 40px;
+                max-inline-size: 491px;
+            }
+
+            p {
+                margin-top: -12px;
+                letter-spacing: 0.35px;
+
+                @media (max-width:$breakpoints-xl) {
+                    text-align: center;
+                }
+            }
+
+            .collaboration__buttons {
+                margin-top: 30px;
+
+                button {
+                    letter-spacing: 0.3px;
+                }
+
+                @media (max-width:$breakpoints-xl) {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            @media (max-width:$breakpoints-xl) {
+                margin-top: 110px;
+            }
+        }
+
+        .collaboration__images {
+
+            img:nth-child(1) {
+                position: relative;
+                top: 92px;
+                left: 162px;
+                z-index: 1;
+
+                @media (max-width:$breakpoints-sm) {
+                    transform: scale(0.7);
+                    top: 86px;
+                    left: 232px;
+                }
+            }
+
+            img:nth-child(2) {
+                position: relative;
+                left: 126px;
+
+                @media (max-width:$breakpoints-sm) {
+                    left: 66px;
+                    transform: scale(0.7);
+                }
+            }
+
+            @media (max-width:$breakpoints-xl) {
+                margin-left: -300px;
+            }
+        }
+
+        @media (max-width:$breakpoints-xl) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    @media (max-width:$breakpoints-xl) {
+        margin-top: 70px;
+    }
+}
