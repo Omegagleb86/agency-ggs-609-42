@@ -1,82 +1,110 @@
 .collaboration {
-    margin-top: 207px;
+  margin-top: 207px;
 
-    .collaboration__content {
-        display: flex;
+  .collaboration__content {
+    display: flex;
 
-        .collaboration__description {
-            display: flex;
-            flex-direction: column;
+    .collaboration__description {
+      display: flex;
+      flex-direction: column;
 
-            h2 {
-                margin-top: 40px;
-                max-inline-size: 491px;
-            }
+      h2 {
+        margin-top: 40px;
+        max-inline-size: 491px;
 
-            p {
-                margin-top: -12px;
-                letter-spacing: 0.35px;
-
-                @media (max-width:$breakpoints-xl) {
-                    text-align: center;
-                }
-            }
-
-            .collaboration__buttons {
-                margin-top: 30px;
-
-                button {
-                    letter-spacing: 0.3px;
-                }
-
-                @media (max-width:$breakpoints-xl) {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-
-            @media (max-width:$breakpoints-xl) {
-                margin-top: 110px;
-            }
+        @media (max-width:$breakpoints-mobile) {
+          max-inline-size: 339px;
+          font-size: 28px;
+          margin-left: 16px;
+          margin-top: -38px;
         }
+      }
 
-        .collaboration__images {
+      p {
+        margin-top: -12px;
+        letter-spacing: 0.35px;
 
-            img:nth-child(1) {
-                position: relative;
-                top: 92px;
-                left: 162px;
-                z-index: 1;
+        @media (max-width:$breakpoints-xl) {
+          text-align: center;
+        }
+      }
 
-                @media (max-width:$breakpoints-sm) {
-                    transform: scale(0.7);
-                    top: 86px;
-                    left: 232px;
-                }
-            }
+      .collaboration__buttons {
+        margin-top: 30px;
 
-            img:nth-child(2) {
-                position: relative;
-                left: 126px;
-
-                @media (max-width:$breakpoints-sm) {
-                    left: 66px;
-                    transform: scale(0.7);
-                }
-            }
-
-            @media (max-width:$breakpoints-xl) {
-                margin-left: -300px;
-            }
+        button {
+          letter-spacing: 0.3px;
+          font-size: 12px;
         }
 
         @media (max-width:$breakpoints-xl) {
-            flex-direction: column-reverse;
-            align-items: center;
+          display: flex;
+          justify-content: center;
         }
+
+        @media (max-width:$breakpoints-mobile) {
+          margin-top: 36px;
+          margin-left: 13px;
+        }
+      }
+
+      @media (max-width:$breakpoints-xl) {
+        margin-top: 110px;
+      }
+    }
+
+    .collaboration__images {
+
+      img:nth-child(1) {
+        position: relative;
+        top: 92px;
+        left: 162px;
+        z-index: 1;
+
+        @media (max-width:$breakpoints-sm) {
+          transform: scale(0.7);
+          top: 86px;
+          left: 232px;
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+          transform: scale(0.68);
+          top: 78px;
+          left: 243px;
+        }
+      }
+
+      img:nth-child(2) {
+        position: relative;
+        left: 126px;
+
+        @media (max-width:$breakpoints-sm) {
+          left: 66px;
+          transform: scale(0.7);
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+          left: 85px;
+          transform: scale(0.68);
+        }
+      }
+
+      @media (max-width:$breakpoints-xl) {
+        margin-left: -300px;
+      }
     }
 
     @media (max-width:$breakpoints-xl) {
-        margin-top: 70px;
+      flex-direction: column-reverse;
+      align-items: center;
     }
+  }
+
+  @media (max-width:$breakpoints-xl) {
+    margin-top: 70px;
+  }
+
+  @media (max-width:$breakpoints-mobile) {
+    margin-top: 53px;
+  }
 }
