@@ -8,6 +8,7 @@
         <h2>Our Teammate</h2>
         <div class="teammate__group">
           <img src="@/assets/img/teammate-img.png" class="teammaet__group-img" alt="">
+          <img src="@/assets/img/teammate-img-sm.png" class="teammaet__group-img teammate__group-sm" alt="">
           <img src="@/assets/img/teammate-img-mobile.png" class="teammaet__group-img teammaet__group-img-mobile" alt="">
           <div class="teammate__group-description">
             <p>We move with make a Creative Strategy for help your business goal, we help to improve

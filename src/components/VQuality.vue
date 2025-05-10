@@ -5,6 +5,8 @@
     <div class="container">
       <div class="quality__content">
         <img src="@/assets/img/image_qualuty.png" class="quality__img" alt="">
+        <img src="@/assets/img/image_qualuty-md.png" class="quality__img quality__img-md" alt="">
+        <img src="@/assets/img/image_qualuty-sm.png" class="quality__img quality__img-sm" alt="">
         <div class="quality__card">
           <div class="card-top">
             <img src="@/assets/img/star.svg" alt="">

@@ -27,14 +27,21 @@
                 }
 
                 @media (max-width:$breakpoints-sm) {
-                    margin-right: 0px;
-                    transform: scale(0.7);
-                }
-
-                @media (max-width:$breakpoints-mobile) {
                     display: none;
                 }
+            }
 
+            .teammate__group-sm{
+              display: none;
+
+              @media (max-width:$breakpoints-sm) {
+                display: block;
+                margin-right: 0;
+              }
+
+              @media (max-width:$breakpoints-mobile) {
+                display: none;
+              }
             }
 
             .teammaet__group-img-mobile{
@@ -42,7 +49,7 @@
 
                 @media (max-width:$breakpoints-mobile) {
                     display: block;
-                    transform: scale(1);
+                    // transform: scale(1);
                     margin-top: 25px;
                 }
             }
