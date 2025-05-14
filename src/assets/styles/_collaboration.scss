@@ -61,6 +61,11 @@
         left: 162px;
         z-index: 1;
 
+        @media (max-width:$breakpoints-md) {
+          top: 232px;
+          left: 12px;
+        }
+
         @media (max-width:$breakpoints-sm) {
           display: none;
         }
@@ -73,6 +78,11 @@
       position: relative;
 
       left: 126px;
+
+      @media (max-width:$breakpoints-md) {
+        left: 126px;
+        top: -169px;
+      }
 
       @media (max-width:$breakpoints-sm) {
         display: none;
