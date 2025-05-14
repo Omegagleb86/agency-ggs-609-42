@@ -1,176 +1,177 @@
 .teammate {
-    margin-top: 150px;
+  margin-top: 150px;
 
-    .teammate__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .teammate__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        h2 {
-            @media (max-width:$breakpoints-mobile) {
-                margin-top: 11px;
-            }
+    h2 {
+      @media (max-width:$breakpoints-mobile) {
+        margin-top: 11px;
+      }
+    }
+
+    .teammate__group {
+      display: flex;
+      flex-wrap: nowrap;
+      font-family: "Quicksand", sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+
+      .teammaet__group-img {
+        margin-right: 66px;
+
+        @media (max-width:$breakpoints-xl) {
+          margin-right: 12px;
         }
 
-        .teammate__group {
-            display: flex;
-            flex-wrap: nowrap;
-            font-family: "Quicksand", sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
+        @media (max-width:$breakpoints-sm) {
+          display: none;
+        }
+      }
 
-            .teammaet__group-img {
-                margin-right: 66px;
+      .teammate__group-sm {
+        display: none;
 
-                @media (max-width:$breakpoints-xl) {
-                    margin-right: 12px;
-                }
-
-                @media (max-width:$breakpoints-sm) {
-                    display: none;
-                }
-            }
-
-            .teammate__group-sm{
-              display: none;
-
-              @media (max-width:$breakpoints-sm) {
-                display: block;
-                margin-right: 0;
-              }
-
-              @media (max-width:$breakpoints-mobile) {
-                display: none;
-              }
-            }
-
-            .teammaet__group-img-mobile{
-                display: none;
-
-                @media (max-width:$breakpoints-mobile) {
-                    display: block;
-                    // transform: scale(1);
-                    margin-top: 25px;
-                }
-            }
-
-            .teammate__group-description {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: start;
-
-
-
-                p {
-                    letter-spacing: 0.25px;
-                    margin: 3px 0 0;
-
-                    @media (max-width:$breakpoints-sm) {
-                        max-inline-size: 357px;
-                    }
-                    @media (max-width:$breakpoints-mobile) {
-                        max-inline-size: 350px;
-                        letter-spacing: 0.4px;
-                        line-height: 1.51;
-                        text-align: left;
-                        margin-left: 11px;
-                        margin-top: -5px;
-                    }
-                }
-
-                .teammate__group-buttons {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    gap: 35px;
-
-                    .button-primary {
-                        display: flex;
-                        padding: 9px 49px;
-                        margin-top: 1px;
-                        text-align: center;
-                        letter-spacing: 0.4px;
-
-                        img {
-                            margin-right: 8px;
-                        }
-
-                        @media (max-width:$breakpoints-mobile) {
-                            display: none;
-                        }
-                    }
-
-                    .button-primary-mobile{
-                        display: none;
-
-                        @media (max-width:$breakpoints-mobile) {
-                            display: block;
-                            font-size: 12px;
-                            padding: 10px 34px;
-
-                            img{
-                                margin-bottom: -5px;
-                            }
-                        }
-                    }
-
-                    @media (max-width:$breakpoints-xl) {
-                        justify-content: space-evenly;
-                    }
-
-                    @media (max-width:$breakpoints-sm) {
-                        flex-direction: column;
-                        gap: 15px;
-                    }
-
-                    @media (max-width:$breakpoints-mobile) {
-                        flex-direction: row;
-                        margin-top: 14px;
-                        margin-left: 4px;
-                        gap: 35px;
-                    }
-                }
-
-                @media (max-width:$breakpoints-xl) {
-                    align-items: center;
-                    gap: 15px;
-                    margin-bottom: 25px;
-                    max-inline-size: 712px;
-                    text-align: center;
-                }
-
-                @media (max-width:$breakpoints-sm) {
-                    gap: 20px;
-                }
-
-                @media (max-width:$breakpoints-mobile) {
-                    gap: 16px;
-                }
-            }
-
-            @media (max-width:$breakpoints-xl) {
-                flex-wrap: wrap;
-                align-items: center;
-                flex-direction: column-reverse;
-            }
+        @media (max-width:$breakpoints-sm) {
+          display: block;
+          margin-right: 0;
         }
 
         @media (max-width:$breakpoints-mobile) {
-            a {
-                font-size: 14px;
-                letter-spacing: 0;
+          display: none;
+        }
+      }
+
+      .teammaet__group-img-mobile {
+        display: none;
+
+        @media (max-width:$breakpoints-mobile) {
+          display: block;
+          // transform: scale(1);
+          margin-top: 25px;
+        }
+      }
+
+      .teammate__group-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+
+
+
+        p {
+          letter-spacing: 0.25px;
+          margin: 3px 0 0;
+
+          @media (max-width:$breakpoints-sm) {
+            max-inline-size: 357px;
+          }
+
+          @media (max-width:$breakpoints-mobile) {
+            max-inline-size: 350px;
+            letter-spacing: 0.4px;
+            line-height: 1.51;
+            text-align: left;
+            margin-left: 11px;
+            margin-top: -5px;
+          }
+        }
+
+        .teammate__group-buttons {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          gap: 25px;
+
+          .button-primary {
+            display: flex;
+            padding: 10px 49px;
+            margin-top: 1px;
+            text-align: center;
+            letter-spacing: 0.4px;
+
+            img {
+              margin-right: 8px;
             }
 
-        }
-    }
+            @media (max-width:$breakpoints-mobile) {
+              display: none;
+            }
+          }
 
-    @media (max-width:$breakpoints-sm) {
-        margin-top: -110px;
+          .button-primary-mobile {
+            display: none;
+
+            @media (max-width:$breakpoints-mobile) {
+              display: block;
+              font-size: 12px;
+              padding: 10px 34px;
+
+              img {
+                margin-bottom: -5px;
+              }
+            }
+          }
+
+          @media (max-width:$breakpoints-xl) {
+            justify-content: space-evenly;
+          }
+
+          @media (max-width:$breakpoints-sm) {
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          @media (max-width:$breakpoints-mobile) {
+            flex-direction: row;
+            margin-top: 14px;
+            margin-left: 4px;
+            gap: 35px;
+          }
+        }
+
+        @media (max-width:$breakpoints-xl) {
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 25px;
+          max-inline-size: 712px;
+          text-align: center;
+        }
+
+        @media (max-width:$breakpoints-sm) {
+          gap: 20px;
+        }
+
+        @media (max-width:$breakpoints-mobile) {
+          gap: 16px;
+        }
+      }
+
+      @media (max-width:$breakpoints-xl) {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
     }
 
     @media (max-width:$breakpoints-mobile) {
-        margin-left: 14px;
-        margin-top: -83px;
+      a {
+        font-size: 14px;
+        letter-spacing: 0;
+      }
+
     }
+  }
+
+  @media (max-width:$breakpoints-sm) {
+    margin-top: -110px;
+  }
+
+  @media (max-width:$breakpoints-mobile) {
+    margin-left: 14px;
+    margin-top: -83px;
+  }
 }

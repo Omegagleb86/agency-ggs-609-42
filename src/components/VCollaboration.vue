@@ -13,7 +13,9 @@
         </div>
         <div class="collaboration__images">
           <img src="@/assets/img/collaboration-1.png" alt="">
+          <img src="@/assets/img/collaboration-1-mobile.png" alt="">
           <img src="@/assets/img/collaboration-2.png" alt="">
+          <img src="@/assets/img/collaboration-2-mobile.png" alt="">
         </div>
       </div>
     </div>
