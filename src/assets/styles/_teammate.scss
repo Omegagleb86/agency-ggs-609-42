@@ -170,11 +170,11 @@
   }
 
   @media (max-width:variables.$breakpoints-sm) {
-    margin-top: -110px;
+    margin-top: 0;
   }
 
   @media (max-width:variables.$breakpoints-mobile) {
     margin-left: 14px;
-    margin-top: -83px;
+    margin-top: 0;
   }
 }
