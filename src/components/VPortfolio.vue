@@ -13,15 +13,15 @@ import { onMounted, ref } from 'vue';
 const portfolioCards = ref([
   {
     title: 'Design Byte App',
-    ip: 'portfolio__group__item-1',
+    ip: 'portfolio__group-item-1',
   },
   {
     title: 'Cloud App',
-    ip: 'portfolio__group__item-2',
+    ip: 'portfolio__group-item-2',
   },
   {
     title: 'Design Furniture App',
-    ip: 'portfolio__group__item-3',
+    ip: 'portfolio__group-item-3',
   },
 ])
 
@@ -76,18 +76,18 @@ onMounted(() => {
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide" v-for="item in portfolioCards">
-              <div v-bind:id="item.ip" class="portfolio__group__item">
+              <div v-bind:id="item.ip" class="portfolio__group-item">
                 <!-- <p>Design Byte App</p> -->
                 <p>{{item.title}}</p>
               </div>
             </div>
             <!-- <div class="swiper-slide">
-              <div id="portfolio__group__item-2" class="portfolio__group__item">
+              <div id="portfolio__group-item-2" class="portfolio__group-item">
                 <p>Cloud App</p>
               </div>
             </div>
             <div class="swiper-slide">
-              <div id="portfolio__group__item-3" class="portfolio__group__item">
+              <div id="portfolio__group-item-3" class="portfolio__group-item">
                 <p>Design Furniture App</p>
               </div>
             </div> -->
@@ -104,24 +104,24 @@ onMounted(() => {
         </div>
         <!--
                 <div class="portfolio__group__cards">
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Design Byte App</p>
                   </div>
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Cloud App</p>
                   </div>
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Design Furniture App</p>
                   </div>
                 </div>
                 <div class="portfolio__group__cards portfolio__group__cards-mobile">
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Design Byte App</p>
                   </div>
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Cloud App</p>
                   </div>
-                  <div class="portfolio__group__item">
+                  <div class="portfolio__group-item">
                     <p>Design Furniture App</p>
                   </div>
                 </div> -->
