@@ -8,7 +8,23 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+
+const portfolioCards = ref([
+  {
+    title: 'Design Byte App',
+    ip: 'portfolio__group__item-1',
+  },
+  {
+    title: 'Cloud App',
+    ip: 'portfolio__group__item-2',
+  },
+  {
+    title: 'Design Furniture App',
+    ip: 'portfolio__group__item-3',
+  },
+])
+
 
 
 onMounted(() => {
@@ -59,12 +75,13 @@ onMounted(() => {
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <div id="portfolio__group__item-1" class="portfolio__group__item">
-                <p>Design Byte App</p>
+            <div class="swiper-slide" v-for="item in portfolioCards">
+              <div v-bind:id="item.ip" class="portfolio__group__item">
+                <!-- <p>Design Byte App</p> -->
+                <p>{{item.title}}</p>
               </div>
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div id="portfolio__group__item-2" class="portfolio__group__item">
                 <p>Cloud App</p>
               </div>
@@ -73,7 +90,7 @@ onMounted(() => {
               <div id="portfolio__group__item-3" class="portfolio__group__item">
                 <p>Design Furniture App</p>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -86,28 +103,28 @@ onMounted(() => {
 
         </div>
         <!--
-              <div class="portfolio__group__cards">
-                <div class="portfolio__group__item">
-                  <p>Design Byte App</p>
+                <div class="portfolio__group__cards">
+                  <div class="portfolio__group__item">
+                    <p>Design Byte App</p>
+                  </div>
+                  <div class="portfolio__group__item">
+                    <p>Cloud App</p>
+                  </div>
+                  <div class="portfolio__group__item">
+                    <p>Design Furniture App</p>
+                  </div>
                 </div>
-                <div class="portfolio__group__item">
-                  <p>Cloud App</p>
-                </div>
-                <div class="portfolio__group__item">
-                  <p>Design Furniture App</p>
-                </div>
-              </div>
-              <div class="portfolio__group__cards portfolio__group__cards-mobile">
-                <div class="portfolio__group__item">
-                  <p>Design Byte App</p>
-                </div>
-                <div class="portfolio__group__item">
-                  <p>Cloud App</p>
-                </div>
-                <div class="portfolio__group__item">
-                  <p>Design Furniture App</p>
-                </div>
-              </div> -->
+                <div class="portfolio__group__cards portfolio__group__cards-mobile">
+                  <div class="portfolio__group__item">
+                    <p>Design Byte App</p>
+                  </div>
+                  <div class="portfolio__group__item">
+                    <p>Cloud App</p>
+                  </div>
+                  <div class="portfolio__group__item">
+                    <p>Design Furniture App</p>
+                  </div>
+                </div> -->
         <button class="button-primary">See All Portfolio</button>
       </div>
     </div>
