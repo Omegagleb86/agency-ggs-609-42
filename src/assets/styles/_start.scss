@@ -1,3 +1,6 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
+
 .start {
     .start__group {
         display: flex;
@@ -10,15 +13,15 @@
             text-align: center;
             max-inline-size: 762px;
 
-            @media (max-width:$breakpoints-md) {
+            @media (max-width:variables.$breakpoints-md) {
                 max-inline-size: 458px;
             }
 
-            @media (max-width:$breakpoints-sm) {
+            @media (max-width:variables.$breakpoints-sm) {
                 max-inline-size: 267px;
             }
 
-            @media (max-width:$breakpoints-mobile) {
+            @media (max-width:variables.$breakpoints-mobile) {
                 max-inline-size: 333px;
                 letter-spacing: 0.5px;
 
@@ -33,13 +36,13 @@
             text-align: center;
             padding-top: 24px;
 
-            @media (max-width:$breakpoints-lg) {}
+            @media (max-width:variables.$breakpoints-lg) {}
 
-            @media (max-width:$breakpoints-sm) {
+            @media (max-width:variables.$breakpoints-sm) {
                 max-inline-size: 271px;
             }
 
-            @media (max-width:$breakpoints-mobile) {
+            @media (max-width:variables.$breakpoints-mobile) {
                 margin-top: -3px;
                 margin-left: 10px;
                 letter-spacing: 0.3px;
@@ -51,14 +54,14 @@
         .button-blue {
             margin: 32px 0 40px 10px;
 
-            @media (max-width:$breakpoints-mobile) {
+            @media (max-width:variables.$breakpoints-mobile) {
                 margin-top: 20px;
                 margin-left: 5px;
             }
         }
     }
 
-    @media (max-width:$breakpoints-mobile) {
+    @media (max-width:variables.$breakpoints-mobile) {
         margin-top: 58px;
         margin-left: 3px;
     }

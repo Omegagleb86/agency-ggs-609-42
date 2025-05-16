@@ -1,3 +1,6 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
+
 .services {
     margin-top: 154px;
 
@@ -24,16 +27,16 @@
                 letter-spacing: 0.4px;
                 margin-top: 20px;
 
-                @media (max-width:$breakpoints-xl) {
+                @media (max-width:variables.$breakpoints-xl) {
                     max-inline-size: 712px;
                     text-align: center;
                 }
 
-                @media (max-width:$breakpoints-sm) {
+                @media (max-width:variables.$breakpoints-sm) {
                     max-inline-size: 352px;
                 }
 
-                @media (max-width:$breakpoints-mobile) {
+                @media (max-width:variables.$breakpoints-mobile) {
                     max-inline-size: 340px;
                     margin-top: 38px;
                 }
@@ -51,7 +54,7 @@
                     font-weight: 700;
                     padding-bottom: 5px;
 
-                    @media (max-width:$breakpoints-mobile) {
+                    @media (max-width:variables.$breakpoints-mobile) {
                         font-size: 14px;
                     }
                 }
@@ -59,7 +62,7 @@
                 .services__description-link__image1 {
                     display: block;
 
-                    @media (max-width:$breakpoints-mobile) {
+                    @media (max-width:variables.$breakpoints-mobile) {
                         display: none;
                     }
                 }
@@ -67,19 +70,19 @@
                 .services__description-link__image2 {
                     display: none;
 
-                    @media (max-width:$breakpoints-mobile) {
+                    @media (max-width:variables.$breakpoints-mobile) {
                         display: block;
                     }
                 }
 
-                @media (max-width:$breakpoints-mobile) {
+                @media (max-width:variables.$breakpoints-mobile) {
                     gap: 10px;
                     margin-top: 34px;
                 }
 
             }
 
-            @media (max-width:$breakpoints-xl) {
+            @media (max-width:variables.$breakpoints-xl) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -112,7 +115,7 @@
                 }
 
                 .services__cards-item-description{
-                    @media (max-width:$breakpoints-mobile) {
+                    @media (max-width:variables.$breakpoints-mobile) {
                         font-size: 16px;
                         max-inline-size: 168px;
                     }
@@ -120,7 +123,7 @@
             }
 
             .services__cards-item:nth-child(1) {
-                box-shadow: $box-shadow__services;
+                box-shadow: variables.$box-shadow__services;
             }
 
             .services__cards-item:nth-child(3),
@@ -133,7 +136,7 @@
                     margin-bottom: 22px;
                 }
 
-                @media (max-width:$breakpoints-mobile) {
+                @media (max-width:variables.$breakpoints-mobile) {
                     img{
                         margin-top: -4px;
                     }
@@ -144,32 +147,32 @@
                 }
             }
 
-            @media (max-width:$breakpoints-sm) {
+            @media (max-width:variables.$breakpoints-sm) {
                 grid-template-columns: repeat(1, 262px);
                 grid-template-rows: repeat(4, 269px);
             }
 
-            @media (max-width:$breakpoints-mobile) {
+            @media (max-width:variables.$breakpoints-mobile) {
                 margin-top: -121px;
                 grid-template-rows: 240px 240px 216px 216px;
             }
         }
 
-        @media (max-width:$breakpoints-xl) {
+        @media (max-width:variables.$breakpoints-xl) {
             flex-direction: column;
             align-items: center;
         }
     }
 
-    @media (max-width:$breakpoints-md) {
+    @media (max-width:variables.$breakpoints-md) {
         margin-top: 65px;
     }
 
-    @media (max-width:$breakpoints-sm) {
+    @media (max-width:variables.$breakpoints-sm) {
         margin-top: -50px;
     }
 
-    @media (max-width:$breakpoints-mobile) {
+    @media (max-width:variables.$breakpoints-mobile) {
         margin-left: 15px;
         margin-top: 18px;
     }

@@ -1,9 +1,12 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
+
 .desktop-navigation {
     display: flex;
     align-items: center;
     height: 190px;
 
-    @media (max-width:$breakpoints-lg) {
+    @media (max-width:variables.$breakpoints-lg) {
         display: none;
     }
 
@@ -14,11 +17,11 @@
         align-items: center;
         gap: 267px;
 
-        @media (max-width:$breakpoints-xl) {
+        @media (max-width:variables.$breakpoints-xl) {
             gap: 120px;
         }
 
-        @media (max-width:$breakpoints-lg) {
+        @media (max-width:variables.$breakpoints-lg) {
             gap: 40px;
         }
     }

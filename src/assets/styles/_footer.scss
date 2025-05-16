@@ -1,3 +1,6 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
+
 footer {
   margin-top: 150px;
   padding: 132px 0 34px;
@@ -21,7 +24,7 @@ footer {
       color: #FFF;
 
       .footer__logo {
-        @media (max-width:$breakpoints-sm) {
+        @media (max-width:variables.$breakpoints-sm) {
           grid-column-start: 1;
           grid-column-end: 3;
         }
@@ -34,7 +37,7 @@ footer {
           font-weight: 700;
           letter-spacing: 0;
 
-          @media (max-width:$breakpoints-mobile) {
+          @media (max-width:variables.$breakpoints-mobile) {
             font-size: 18px;
           }
         }
@@ -50,12 +53,12 @@ footer {
           font-size: 18px;
           letter-spacing: 0;
 
-          @media (max-width:$breakpoints-mobile) {
+          @media (max-width:variables.$breakpoints-mobile) {
             font-size: 16px;
           }
         }
 
-        @media (max-width:$breakpoints-sm) {
+        @media (max-width:variables.$breakpoints-sm) {
           grid-column-start: 1;
           grid-column-end: 2;
         }
@@ -63,19 +66,19 @@ footer {
 
 
 
-      // @media (max-width:$breakpoints-mobile) {
+      // @media (max-width:variables.$breakpoints-mobile) {
       //     grid-template-columns: 253px 83px;
       //     grid-template-rows: 1fr 1fr 1fr 1fr;
       // }
 
       .footer__item.-right {
-        @media (max-width:$breakpoints-mobile) {
+        @media (max-width:variables.$breakpoints-mobile) {
           grid-column-start: 2;
           grid-column-end: 3;
         }
       }
 
-      @media (max-width:$breakpoints-mobile) {
+      @media (max-width:variables.$breakpoints-mobile) {
         .footer__item:nth-child(1) {
           margin-top: 36px;
         }
@@ -89,16 +92,16 @@ footer {
         }
       }
 
-      @media (max-width:$breakpoints-xl) {
+      @media (max-width:variables.$breakpoints-xl) {
         grid-template-columns: 2fr 1fr;
         grid-gap: 80px;
       }
 
-      // @media (max-width:$breakpoints-sm) {
+      // @media (max-width:variables.$breakpoints-sm) {
       //     grid-template-columns: 1fr;
       // }
 
-      @media (max-width:$breakpoints-mobile) {
+      @media (max-width:variables.$breakpoints-mobile) {
         grid-template-columns: 2fr 1fr;
         row-gap: 81px;
         column-gap: 44px;
@@ -119,7 +122,7 @@ footer {
         margin-bottom: 8px;
         gap: 40px;
 
-        @media (max-width:$breakpoints-mobile) {
+        @media (max-width:variables.$breakpoints-mobile) {
           gap: 20px;
         }
       }
@@ -131,7 +134,7 @@ footer {
         margin-left: 0;
         margin-bottom: 15px;
 
-        @media (max-width:$breakpoints-sm) {
+        @media (max-width:variables.$breakpoints-sm) {
           display: none;
         }
       }
@@ -142,37 +145,37 @@ footer {
         letter-spacing: 0.1px;
         // margin-left: -194px;
 
-        @media (max-width:$breakpoints-mobile) {
+        @media (max-width:variables.$breakpoints-mobile) {
           max-inline-size: 390px;
           font-size: 14px;
         }
       }
 
-      // @media (max-width:$breakpoints-xl) {
+      // @media (max-width:variables.$breakpoints-xl) {
       //   margin: 56px 0 0 270px;
       // }
 
-      @media (max-width:$breakpoints-lg) {}
+      @media (max-width:variables.$breakpoints-lg) {}
 
-      // @media (max-width:$breakpoints-mobile) {
+      // @media (max-width:variables.$breakpoints-mobile) {
       //   margin: 40px 0 0 265px;
       // }
     }
 
-    // @media (max-width:$breakpoints-xl) {
+    // @media (max-width:variables.$breakpoints-xl) {
     //   margin-top: 60px;
     //   padding: 45px 0 0 26px;
     // }
 
-    @media (max-width:$breakpoints-md) {}
+    @media (max-width:variables.$breakpoints-md) {}
 
-    @media (max-width:$breakpoints-sm) {}
+    @media (max-width:variables.$breakpoints-sm) {}
 
 
 
   }
 
-  @media (max-width:$breakpoints-mobile) {
+  @media (max-width:variables.$breakpoints-mobile) {
     padding: 80px 0 34px;
   }
 }

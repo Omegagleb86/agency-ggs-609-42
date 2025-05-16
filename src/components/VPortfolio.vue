@@ -1,4 +1,45 @@
-<script setup></script>
+<script setup>
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { onMounted } from 'vue';
+
+
+onMounted(() => {
+  // init Swiper:
+  const swiper = new Swiper('.portfolio-swiper', {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination],
+    // // Optional parameters
+    // direction: 'vertical',
+    // loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+})
+
+</script>
 
 <template>
   <section class="portfolio">
@@ -11,28 +52,62 @@
         <p>all projects that we have already done , proven can help to use more comfortable, then can used
           by
           client from our business</p>
-        <div class="portfolio__group__cards">
-          <div class="portfolio__group__item">
-            <p>Design Byte App</p>
+
+
+        <!-- Slider main container -->
+        <div class="swiper portfolio-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div id="portfolio__group__item-1" class="portfolio__group__item">
+                <p>Design Byte App</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="portfolio__group__item-2" class="portfolio__group__item">
+                <p>Cloud App</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div id="portfolio__group__item-3" class="portfolio__group__item">
+                <p>Design Furniture App</p>
+              </div>
+            </div>
           </div>
-          <div class="portfolio__group__item">
-            <p>Cloud App</p>
-          </div>
-          <div class="portfolio__group__item">
-            <p>Design Furniture App</p>
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+
         </div>
-        <div class="portfolio__group__cards portfolio__group__cards-mobile">
-          <div class="portfolio__group__item">
-            <p>Design Byte App</p>
-          </div>
-          <div class="portfolio__group__item">
-            <p>Cloud App</p>
-          </div>
-          <div class="portfolio__group__item">
-            <p>Design Furniture App</p>
-          </div>
-        </div>
+        <!--
+              <div class="portfolio__group__cards">
+                <div class="portfolio__group__item">
+                  <p>Design Byte App</p>
+                </div>
+                <div class="portfolio__group__item">
+                  <p>Cloud App</p>
+                </div>
+                <div class="portfolio__group__item">
+                  <p>Design Furniture App</p>
+                </div>
+              </div>
+              <div class="portfolio__group__cards portfolio__group__cards-mobile">
+                <div class="portfolio__group__item">
+                  <p>Design Byte App</p>
+                </div>
+                <div class="portfolio__group__item">
+                  <p>Cloud App</p>
+                </div>
+                <div class="portfolio__group__item">
+                  <p>Design Furniture App</p>
+                </div>
+              </div> -->
         <button class="button-primary">See All Portfolio</button>
       </div>
     </div>

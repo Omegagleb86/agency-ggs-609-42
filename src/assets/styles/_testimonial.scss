@@ -1,3 +1,5 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
 .testimonial {
   margin-top: 146px;
 
@@ -12,7 +14,7 @@
     }
 
     h2 {
-      @media (max-width:$breakpoints-mobile) {
+      @media (max-width:variables.$breakpoints-mobile) {
         margin: 10px 0 39px 0;
         letter-spacing: 0.1px;
       }
@@ -26,7 +28,7 @@
       .testimonial__item {
         padding: 50px 30px;
         border-radius: 20px;
-        box-shadow: $box-shadow__testimonial;
+        box-shadow: variables.$box-shadow__testimonial;
 
         .card-top {
           gap: 31px;
@@ -48,12 +50,12 @@
               color: #464646;
               opacity: 0.5;
 
-              // @media (max-width:$breakpoints-mobile) {
+              // @media (max-width:variables.$breakpoints-mobile) {
 
               // }
             }
 
-            @media (max-width:$breakpoints-mobile) {
+            @media (max-width:variables.$breakpoints-mobile) {
               font-size: 18px;
             }
           }
@@ -70,23 +72,23 @@
           font-size: 18px;
           margin-top: 25px;
 
-          @media (max-width:$breakpoints-xl) {
+          @media (max-width:variables.$breakpoints-xl) {
             max-inline-size: 395px;
           }
 
-          @media (max-width:$breakpoints-mobile) {
+          @media (max-width:variables.$breakpoints-mobile) {
             font-size: 14px;
             margin-top: 35px;
           }
         }
 
-        @media (max-width:$breakpoints-mobile) {
+        @media (max-width:variables.$breakpoints-mobile) {
           padding: 25px 41px 49px 18px;
           margin-left: 21px;
         }
       }
 
-      @media (max-width:$breakpoints-xl) {
+      @media (max-width:variables.$breakpoints-xl) {
         justify-content: center;
         gap: 0;
 
@@ -101,12 +103,12 @@
     }
   }
 
-  @media (max-width:$breakpoints-xl) {
+  @media (max-width:variables.$breakpoints-xl) {
     margin-top: 70px;
     margin-left: 0px;
   }
 
-  @media (max-width:$breakpoints-mobile) {
+  @media (max-width:variables.$breakpoints-mobile) {
     margin-top: -15px;
     margin-left: 13px;
   }

@@ -1,7 +1,10 @@
+/* Подключение переменных препроцессора */
+@use "variables.scss";
+
 .mobile-navigation {
     display: none;
 
-    @media (max-width: $breakpoints-lg) {
+    @media (max-width: variables.$breakpoints-lg) {
         display: block;
     }
 
@@ -41,7 +44,7 @@
             padding-left: 0;
 
             a {
-                color: $p-base;
+                color: variables.$p-base;
             }
         }
 
