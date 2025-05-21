@@ -34,23 +34,23 @@
         }
       }
 
-      .teammate__group-sm {
+      // .teammate__group-sm {
+      //   display: none;
+
+      //   @media (max-width:variables.$breakpoints-sm) {
+      //     display: block;
+      //     margin-right: 0;
+      //   }
+
+      //   @media (max-width:variables.$breakpoints-mobile) {
+      //     display: none;
+      //   }
+      // }
+
+      .teammaet__group-img-sm {
         display: none;
 
         @media (max-width:variables.$breakpoints-sm) {
-          display: block;
-          margin-right: 0;
-        }
-
-        @media (max-width:variables.$breakpoints-mobile) {
-          display: none;
-        }
-      }
-
-      .teammaet__group-img-mobile {
-        display: none;
-
-        @media (max-width:variables.$breakpoints-mobile) {
           display: block;
           // transform: scale(1);
           margin-top: 25px;

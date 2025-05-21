@@ -1,14 +1,17 @@
 /* Подключение переменных препроцессора */
 @use "variables.scss";
+
 .collaboration {
   margin-top: 207px;
 
   .collaboration__content {
     display: flex;
+    justify-content: center;
 
     .collaboration__description {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       h2 {
         margin-top: 40px;
@@ -26,7 +29,7 @@
         margin-top: -12px;
         letter-spacing: 0.35px;
 
-        @media (max-width:variables.$breakpoints-xl) {
+        @media (max-width:variables.$breakpoints-lg) {
           text-align: center;
         }
       }
@@ -60,15 +63,15 @@
       img:nth-child(1) {
         position: relative;
         top: 92px;
-        left: 162px;
+        left: -7px;
         z-index: 1;
 
-        @media (max-width:variables.$breakpoints-md) {
-          top: 232px;
-          left: 12px;
+        @media (max-width:variables.$breakpoints-xl) {
+          top: 162px;
+          left: 83px;
         }
 
-        @media (max-width:variables.$breakpoints-sm) {
+        @media (max-width:variables.$breakpoints-lg) {
           display: none;
         }
 
@@ -79,16 +82,18 @@
 
       position: relative;
 
-      left: 126px;
+      left: -15px;
 
-      @media (max-width:variables.$breakpoints-md) {
-        left: 126px;
-        top: -169px;
+      @media (max-width:variables.$breakpoints-xl) {
+        top: -210px;
+        left: 253px;
       }
 
-      @media (max-width:variables.$breakpoints-sm) {
+      @media (max-width:variables.$breakpoints-lg) {
         display: none;
       }
+
+
 
     }
 
@@ -96,37 +101,74 @@
       display: none;
       z-index: 1;
       position: relative;
-      left: 60px;
+      left: 180px;
       top: 229px;
 
-      @media (max-width:variables.$breakpoints-sm) {
+      @media (max-width:variables.$breakpoints-lg) {
         display: block;
       }
 
-      @media (max-width:variables.$breakpoints-mobile) {
-        left: 20px;
-        top: 229px;
+      @media (max-width:variables.$breakpoints-md) {
+        left: 160px;
       }
+
+      @media (max-width:variables.$breakpoints-sm) {
+        left: 80px;
+      }
+
+      @media (max-width: 470px) {
+        left: 54px;
+      }
+
+      @media (max-width:variables.$breakpoints-mobile) {
+        left: 34px;
+      }
+
+
+
+
+
+
+      // @media (max-width:variables.$breakpoints-mobile) {
+
+      // }
     }
 
     img:nth-child(4) {
       display: none;
       position: relative;
-      left: 267px;
+      left: 327px;
       top: -55px;
 
-      @media (max-width:variables.$breakpoints-sm) {
+      @media (max-width:variables.$breakpoints-lg) {
         display: block;
       }
 
-      @media (max-width:variables.$breakpoints-mobile) {
-        left: 147px;
-        top: -55px;
+      @media (max-width:variables.$breakpoints-md) {
+        left: 300px;
       }
+
+      @media (max-width:variables.$breakpoints-sm) {
+        left: 220px;
+      }
+
+      @media (max-width: 470px) {
+        left: 160px;
+      }
+
+      @media (max-width:variables.$breakpoints-mobile) {
+        left: 130px;
+      }
+
+
+
+      // @media (max-width:variables.$breakpoints-mobile) {
+
+      // }
 
     }
 
-    @media (max-width:variables.$breakpoints-sm) {
+    @media (max-width:variables.$breakpoints-lg) {
       flex-direction: column-reverse;
     }
   }

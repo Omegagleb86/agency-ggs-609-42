@@ -52,10 +52,10 @@ onMounted(() => {
         spaceBetween: 24,
       },
 
-      390:
+      1:
       {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 24,
       }
     },
     // // Optional parameters
