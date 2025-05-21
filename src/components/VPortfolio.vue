@@ -40,6 +40,12 @@ onMounted(() => {
     slidesPerView: 3,
     spaceBetween: 24,
     breakpoints: {
+      1440:
+      {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+
       992:
       {
         slidesPerView: 2,
@@ -122,29 +128,6 @@ onMounted(() => {
           <!-- If we need scrollbar -->
 
         </div>
-        <!--
-                              <div class="portfolio__group__cards">
-                                <div class="portfolio__group-item">
-                                  <p>Design Byte App</p>
-                                </div>
-                                <div class="portfolio__group-item">
-                                  <p>Cloud App</p>
-                                </div>
-                                <div class="portfolio__group-item">
-                                  <p>Design Furniture App</p>
-                                </div>
-                              </div>
-                              <div class="portfolio__group__cards portfolio__group__cards-mobile">
-                                <div class="portfolio__group-item">
-                                  <p>Design Byte App</p>
-                                </div>
-                                <div class="portfolio__group-item">
-                                  <p>Cloud App</p>
-                                </div>
-                                <div class="portfolio__group-item">
-                                  <p>Design Furniture App</p>
-                                </div>
-                              </div> -->
         <button class="button-primary">See All Portfolio</button>
       </div>
     </div>

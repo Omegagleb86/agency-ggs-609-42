@@ -104,10 +104,6 @@
       //   justify-content: center;
       // }
 
-
-
-
-
       a {
         letter-spacing: 0.1px;
       }
@@ -143,7 +139,8 @@
         align-items: center;
         gap: 69px;
         margin-top: 49px;
-        margin-bottom: 24px;
+        margin-bottom: 34px;
+
 
         // @media (min-width:1441px) {
         //     margin-top: 82px;
@@ -160,6 +157,10 @@
         @media (max-width:variables.$breakpoints-mobile) {
           display: none;
         }
+      }
+
+      .portfolio-swiper{
+        margin-bottom: 34px;
       }
 
       .portfolio__group__cards-mobile {
