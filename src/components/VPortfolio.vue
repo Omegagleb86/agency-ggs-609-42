@@ -36,6 +36,22 @@ onMounted(() => {
   const swiper = new Swiper('.portfolio-swiper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
+
+    slidesPerView: 3,
+    spaceBetween: 24,
+    breakpoints: {
+      992:
+      {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+
+      390:
+      {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      }
+    },
     // // Optional parameters
     // direction: 'vertical',
     // loop: true,
@@ -86,15 +102,15 @@ onMounted(() => {
               </div>
             </div>
             <!-- <div class="swiper-slide">
-              <div id="portfolio__group-item-2" class="portfolio__group-item">
-                <p>Cloud App</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="portfolio__group-item-3" class="portfolio__group-item">
-                <p>Design Furniture App</p>
-              </div>
-            </div> -->
+                            <div id="portfolio__group-item-2" class="portfolio__group-item">
+                              <p>Cloud App</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div id="portfolio__group-item-3" class="portfolio__group-item">
+                              <p>Design Furniture App</p>
+                            </div>
+                          </div> -->
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -107,28 +123,28 @@ onMounted(() => {
 
         </div>
         <!--
-                <div class="portfolio__group__cards">
-                  <div class="portfolio__group-item">
-                    <p>Design Byte App</p>
-                  </div>
-                  <div class="portfolio__group-item">
-                    <p>Cloud App</p>
-                  </div>
-                  <div class="portfolio__group-item">
-                    <p>Design Furniture App</p>
-                  </div>
-                </div>
-                <div class="portfolio__group__cards portfolio__group__cards-mobile">
-                  <div class="portfolio__group-item">
-                    <p>Design Byte App</p>
-                  </div>
-                  <div class="portfolio__group-item">
-                    <p>Cloud App</p>
-                  </div>
-                  <div class="portfolio__group-item">
-                    <p>Design Furniture App</p>
-                  </div>
-                </div> -->
+                              <div class="portfolio__group__cards">
+                                <div class="portfolio__group-item">
+                                  <p>Design Byte App</p>
+                                </div>
+                                <div class="portfolio__group-item">
+                                  <p>Cloud App</p>
+                                </div>
+                                <div class="portfolio__group-item">
+                                  <p>Design Furniture App</p>
+                                </div>
+                              </div>
+                              <div class="portfolio__group__cards portfolio__group__cards-mobile">
+                                <div class="portfolio__group-item">
+                                  <p>Design Byte App</p>
+                                </div>
+                                <div class="portfolio__group-item">
+                                  <p>Cloud App</p>
+                                </div>
+                                <div class="portfolio__group-item">
+                                  <p>Design Furniture App</p>
+                                </div>
+                              </div> -->
         <button class="button-primary">See All Portfolio</button>
       </div>
     </div>
