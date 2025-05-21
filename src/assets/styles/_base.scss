@@ -17,7 +17,7 @@ body {
 p {
     font-weight: 300;
     font-size: 20px;
-    color: #464646;
+    color: variables.$p-base;
     margin: 0;
 
     // @media (max-width:variables.$breakpoints-xl) {
@@ -93,7 +93,7 @@ h2 {
     @media (max-width:variables.$breakpoints-xl) {
         text-align: center;
         // font-size: 3.81vw;
-        font-size: 25px;
+        font-size: 45px;
     }
 
     @media (max-width:variables.$breakpoints-mobile) {
@@ -114,7 +114,7 @@ h2 {
 }
 
 a {
-    color: #377DFF;
+    color: variables.$blue-second;
     font-family: "Quicksand", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -133,10 +133,10 @@ a {
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
-    color: #377DFF;
-    background-color: #FFF;
+    color: variables.$blue-second;
+    background-color: variables.$primary;
     padding: 12px 50px;
-    border: solid #377DFF 1px;
+    border: solid variables.$blue-second 1px;
     border-radius: 24px;
     text-wrap: nowrap;
 
@@ -151,10 +151,10 @@ a {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
-    color: #FFF;
-    background-color: #377DFF;
+    color: variables.$primary;
+    background-color: variables.$blue-second;
     padding: 12px 50px;
-    border: solid #377DFF 1px;
+    border: solid variables.$blue-second 1px;
     border-radius: 24px;
     box-shadow: variables.$box-shadow_blue;
     text-wrap: nowrap;

@@ -67,8 +67,8 @@
     top: 80px;
     left: 142px;
     padding: 15px 32px 16px 20px;
-    border: 1px solid #FFF;
-    background-color: #FFF;
+    border: 1px solid variables.$primary;
+    background-color: variables.$primary;
     border-radius: 16px;
     font-weight: 700;
     box-shadow: variables.$box-shadow__quality-card;
@@ -76,7 +76,7 @@
     .card-top {
       p {
         margin: 3px 0 0;
-        color: #1D1D1D;
+        color: variables.$navigation;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.14px;
@@ -152,8 +152,8 @@
     top: 399px;
     left: 930px;
     padding: 26px 22px 24px 20px;
-    border: 1px solid #FFF;
-    background-color: #FFF;
+    border: 1px solid variables.$primary;
+    background-color: variables.$primary;
     border-radius: 16px;
     font-weight: 700;
     box-shadow: variables.$box-shadow__quality-card;
@@ -173,7 +173,7 @@
       }
 
       p {
-        color: #1D1D1D;
+        color: variables.$navigation;
         font-family: "Quicksand", sans-serif;
         font-size: 10px;
         font-weight: 700;

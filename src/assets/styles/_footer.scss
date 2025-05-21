@@ -4,7 +4,7 @@
 footer {
   margin-top: 150px;
   padding: 132px 0 34px;
-  background-color: #383638;
+  background-color: variables.$footer_color;
 
   @media (min-width:1441px) {
     padding: 130px 103px 0 108px;
@@ -21,7 +21,7 @@ footer {
       display: grid;
       grid-template-columns: 187px 172px 102px 190px 289px;
       column-gap: 76.25px;
-      color: #FFF;
+      color: variables.$primary;
 
       .footer__logo {
         @media (max-width:variables.$breakpoints-sm) {
@@ -48,7 +48,7 @@ footer {
         }
 
         a {
-          color: #FFF;
+          color: variables.$primary;
           font-weight: 500;
           font-size: 18px;
           letter-spacing: 0;
@@ -130,7 +130,7 @@ footer {
       .footer__line {
         width: 500px;
         height: 0;
-        border: 1px solid #FFF;
+        border: 1px solid variables.$primary;
         margin-left: 0;
         margin-bottom: 15px;
 
@@ -140,7 +140,7 @@ footer {
       }
 
       p {
-        color: #FFF;
+        color: variables.$primary;
         font-size: 18px;
         letter-spacing: 0.1px;
         // margin-left: -194px;
